@@ -16,19 +16,19 @@
             <form class="formInput" action="{{ route('login') }}" method='POST'>@csrf
                 <div class="inputEmail">
                     <div class="labelEmail">Votre email</div>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" value="{{ old('email') }}" required>
                 </div>
                 <div class="motDePasse">
                     <label class="labelmotDePasse">Votre mot de passe</label>
-                    <input type="password" name="motDePasse" id="motDePasse" required>
+                    <input type="password" name="password" id="motDePasse" required>
                 </div>
-                @if($errors->any())
+                <!-- @if($errors->any()) -->
                 <div class="erreur">
                     <p class="p_erreur">Veuillez vérifier votre email ou votre mot de passe!</p>
                 </div>
-                @endif
+                <!-- @endif -->
                 <div class="adminBtn">
-                    <button class="btnAdmin">Se connecter</button>
+                    <button class="btnAdmin" style="cursor:pointer">Se connecter</button>
                 </div>
             </form>
             <p><i class="fa fa-infinity"></i> Accès réservé aux administrateur. <i class="fa fa-infinity"></i></p>

@@ -45,18 +45,18 @@ motDePasse.addEventListener("input",()=>{
     }
 })
 
-// const p_erreur = document.querySelector(".p_erreur")
-// btnAdmin.addEventListener("click",(e)=>{
-//     e.preventDefault();
-//     let mdp = "08*Marie"
-//     let mailaka = "lalaina@gmail.com"
-//     if (( motDePasse.value == mdp) && (email.value == mailaka)){ 
+const p_erreur = document.querySelector(".p_erreur")
+btnAdmin.addEventListener("click",(e)=>{
+    e.preventDefault();
+    let mdp = "08*Marie"
+    let mailaka = "lalaina@gmail.com"
+    if (( motDePasse.value == mdp) && (email.value == mailaka)){ 
 
-//         p_erreur.style.display ="block"
-//         p_erreur.textContent = "Patientez"
-//         p_erreur.style.color ="blue"
-//     }else{
-//         p_erreur.style.display ="block"
-//     }
-//     form.reset();
-// })
+        p_erreur.style.display ="block"
+        p_erreur.textContent = "Patientez"
+        p_erreur.style.color ="blue"
+    }else{
+        p_erreur.style.display ="block"
+    }
+    form.reset();
+})

@@ -85,9 +85,9 @@ border: solid .2vw rgba(255, 255, 255, 0.712);
     padding-top: 1vw;
     text-align: center;
 }
-.p_erreur{
+/* .p_erreur{
     display: none;
-}
+} */
 .erreur p{
     font-size: .8vw;
     color: green;
