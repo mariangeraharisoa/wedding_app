@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    /* scrollbar-width: none; */
+}
+@font-face {
+    font-family: admin1;
+    src: url(font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: admin2;
+    src: url(font/Poppins-Medium.ttf);
+}
+body{
+    background: url(../images/Arches\ &\ Mariage.jpg) rgba(0, 0, 0, 0.603);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: lighten;
+}
+section{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+.titreSeConnecter h2{
+    text-align: center;
+    font-size: 1.5vw;
+    margin: 2vw 0vw 2vw;
+    text-decoration: underline dotted .1vw deeppink;
+}
+.boxAdmin{
+background: rgba(255, 255, 255, 0.959);
+color: deeppink;
+width: 25vw;
+height: 33vw;
+font-family: admin1;
+margin: 10vw auto;
+padding: 1vw; 
+border: solid .2vw deeppink;
+border-radius: .7vw;
+}
+.boxAdmin:hover{
+border: solid .2vw rgba(255, 255, 255, 0.712);
+    
+}
+.formInput{
+ margin-left: 1.5vw;
+}
+.boxAdmin input{
+    width: 20vw;
+    padding: 0.7vw;
+    border-radius: .7vw;
+    border: solid .1vw white;
+    background: rgba(128, 128, 128, 0.429);
+}
+.motDePasse{
+    margin: 2vw 0vw 0vw;
+}
+.adminBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+
+}
+.btnAdmin{
+    font-size: 1vw;
+    font-family: admin2;
+    text-align: center;
+    padding: 0.5vw;
+    margin-right: 2vw;
+    border-radius: .7vw;
+    color: white;
+    border: solid .1vw rgba(255, 20, 145, 0.774);
+    width: 10vw;
+    background: deeppink;
+
+
+}
+.boxAdmin p{
+    font-size: .8vw;
+    padding-top: 1vw;
+    text-align: center;
+}
+.p_erreur{
+    display: none;
+}
+.erreur p{
+    font-size: .8vw;
+    color: green;
+    animation: erreur 1s infinite;
+}
+@keyframes erreur {
+    100%{
+        transform: scale(1.1);
+        transition: 1s;
+    }
+}
+.pied_login{
+    text-align: center;
+    padding-top: 1vw;
+}
+/* LOADING */
+.div_spinner{
+display: none;
+}
+.fa-spinner{
+    font-size: 4vw;
+    color:rgba(255, 20, 145, 0.537);
+    position: relative;
+    top: -29vw;
+    right: -47vw;
+    animation: load 1s infinite;
+    /* display: none; */
+}
+@keyframes load {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
