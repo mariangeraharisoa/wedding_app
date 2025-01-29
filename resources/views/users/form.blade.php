@@ -24,6 +24,14 @@
         <label for="address" class="form-label">Adresse</label>
         <input type="text" class="form-control" id="address" name="address" value="{{ old('address', $user->address ?? '') }}">
     </div>
+    <div class="mb-3">
+        <label for="type" class="form-label">Type de compte</label>
+        <select class="form-select" id="type" name="type_id">
+            @foreach ($user_types as $user_type)
+                <option value="{{ $user_type->id }}" @if(old('type', $user->type_id ?? '') == $user_type->id) selected @endif>{{ $user_type->name }}</option>
+            @endforeach
+        </select>
+    </div>
     @if(isset($isAdd) && $isAdd)
         <div class="mb-3">
             <label for="password" class="form-label">Mot de passe</label>

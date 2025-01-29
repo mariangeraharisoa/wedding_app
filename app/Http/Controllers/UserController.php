@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\UserType;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
 
@@ -17,7 +18,8 @@ class UserController extends Controller
 
     function add(){
         $isAdd = true;
-        return view('users.add', compact('isAdd'));
+        $user_types = UserType::all();
+        return view('users.add', compact('isAdd', 'user_types'));
     }
 
     function doAdd() {
@@ -28,6 +30,7 @@ class UserController extends Controller
         $user->lastname = request('lastname');
         $user->address = request('address');
         $user->contact = request('contact');
+        $user->type_id = request('type_id');
         $user->save();
 
         return redirect()->route('users.index');
@@ -35,7 +38,9 @@ class UserController extends Controller
 
     function edit($id){
         $user = User::find($id);
-        return view('users.edit', compact('user'));
+        $user_types = UserType::all();
+        
+        return view('users.edit', compact('user', 'user_types'));
     }
 
     function doEdit($id){
@@ -46,6 +51,7 @@ class UserController extends Controller
         $user->lastname = request('lastname');
         $user->address = request('address');
         $user->contact = request('contact');
+        $user->type_id = request('type_id');
         $user->save();
 
         return redirect()->route('users.index');
