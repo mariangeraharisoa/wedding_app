@@ -18,6 +18,7 @@
 .common_dash_board{
     width: 76vw;
     height: 53vw;
+    padding-right: 1vw;
 }
 
 .section_dash{
@@ -201,6 +202,7 @@ color: #e54c9f;
     color: transparent;
 }
 .about_price{
+ font-size: 1.5vw;
 
 }
 .k, .k1, .k2, .k3{
@@ -209,18 +211,27 @@ color: #e54c9f;
 }
 .k h3{
 color: #0c6699;
+font-size: 1.5vw;
 }
 .k1 h3{
 color: #5af456;
+font-size: 1.5vw;
+
 }
 .k2 h3{
 color: #990c0c;
+font-size: 1.5vw;
+
 }
 .k3 h3{
     color:#990c58;
+font-size: 1.5vw;
+
 }
 .span_service{
     font-size: .8vw;
+font-size: 1vw;
+
 }
 .about_price .span_about_price{
 
@@ -960,7 +971,7 @@ p{
     padding:.5vw;
     border: none;
     background:#f4f4f4;
-    border: solid .1vw #f4f4f4;
+    border: solid .1vw #928b8b;
     width:26vw;
 }
 .form_ap{
