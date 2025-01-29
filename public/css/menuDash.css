@@ -258,6 +258,9 @@ color: #990c0c;
     padding-top: 1vw;
 
 }
+.title_h2{
+    font-size: 1.2vw;
+}
 .revenue1{
     background:#f6f3f3;
     border-radius: .5vw;
@@ -265,8 +268,6 @@ color: #990c0c;
     height: 21vw;
     padding: 1vw;
 }
-
-
 .diagram{
     margin: 0vw auto;
     font-family: poppins1;
@@ -430,6 +431,7 @@ color: #990c0c;
     background:#f6f3f3;
     padding: 1vw;
     width: 40vw;
+    height: 25vw;
     border-radius:.5vw;
     box-shadow: 0vw 0vw 1vw rgba(0, 0, 0, 0.35);
 
@@ -439,6 +441,7 @@ color: #990c0c;
     display: flex;
     justify-content: space-between;
 }
+
 .form_ap{
     width: 22vw;
     display: flex;
@@ -510,7 +513,9 @@ form .fa-search{
 
 .ap_profil{
     padding-left: 1vw;
-    
+}
+.ap_profil h3{
+    font-size: 1vw;
 }
 .content_appreciate{
     width: 13vw;
@@ -634,6 +639,9 @@ object-fit: cover;
     color: white;
     box-shadow: 0vw 0vw 1vw rgba(0, 0, 0, 0.35);
 
+}
+.plateform_gestion h5{
+    font-size: 1vw;
 }
 
 
