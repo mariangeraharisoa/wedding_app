@@ -35,6 +35,6 @@ class LoginController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect()->intended('home');
+        return redirect()->intended('fo/home');
     }
 }

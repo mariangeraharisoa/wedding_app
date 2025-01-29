@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\frontoffice\HomeFrontController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserController;
@@ -37,3 +38,5 @@ Route::get('/users/delete/{id}', [UserController::class, 'delete'])->name('users
 
 Route::get('/planning', [PlanController::class, 'reservation']);
 Route::get('/dash',[DashController::class,'dash'])->name('gestion'); 
+
+Route::get('/fo/home', [HomeFrontController::class, 'index'])->name('fo.home');
