@@ -58,7 +58,7 @@
             <div class="revenue1">
                 <div class="user_quatation">
                     <div class="top_ap">
-                        <h2>Top revenue</h2>
+                        <h2 class="title_h2">Top revenue</h2>
                         <span>Les meilleurs revenue par mois</span>
                     </div>
                     <div class="top_filter">
@@ -120,7 +120,7 @@
                 <div class="box_commentaire">
                     <div class="user_quatation">
                         <div class="top_ap">
-                            <h2>Top commentaires</h2>
+                            <h2 class="title_h2">Top commentaires</h2>
                             <span>Les meilleurs commentaires du mois</span>
                         </div>
                         <div class="top_filter">
@@ -165,7 +165,7 @@
             <div class="appreciate1">
                 <div class="head_app">
                     <div class="top_ap">
-                        <h2>Top appreciation</h2>
+                        <h2 class="title_h2">Top appreciation</h2>
                         <span>Les meilleurs préstations par projet</span>
                     </div>
                     <div class="form_ap">
@@ -291,7 +291,7 @@
                 <div class="boaty_iray">
                     <div class="user_quatation">
                         <div class="top_ap">
-                            <h2>Utilisateur & demande de devis</h2>
+                            <h2 class="title_h2">Utilisateur & demande de devis</h2>
                             <span>Nombres d'utilisateurs & les demandes de prestation du mois </span>
                         </div>
                         <div class="top_filter">

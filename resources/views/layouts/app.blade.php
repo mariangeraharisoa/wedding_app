@@ -273,10 +273,13 @@
                         <i class="fab fa-leanpub"></i>
                         <span class="span_menu_dash">Catalogue de services</span>
                     </div>
+                    
+                    <a href="{{ route('gestion') }}" class="a-no-decoration">
                     <div class="line1">
                         <i class="fa fa-paste "></i>
                         <span class="span_menu_dash">Gestion des résérvations</span>
                     </div>
+                    </a>
                     <div class="line1">
                         <i class="fa fa-file-signature"></i>
                         <span class="span_menu_dash">Pages et contenu</span>
