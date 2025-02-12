@@ -13,11 +13,11 @@
     src: url(font/Poppins-Medium.ttf);
 }
 body{
-    background: url(../images/Arches\ &\ Mariage.jpg) rgba(0, 0, 0, 0.603);
+    background: url(../images/back2.jpg) rgba(0, 0, 0, 0.603);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-blend-mode: lighten;
+    background-blend-mode: darken;
 }
 section{
     background-repeat: no-repeat;

@@ -21,7 +21,6 @@ class UserController extends Controller
         $user_types = UserType::all();
         return view('users.add', compact('isAdd', 'user_types'));
     }
-
     function doAdd() {
         $user = new User();
         $user->name = request('name');

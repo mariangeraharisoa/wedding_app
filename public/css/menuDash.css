@@ -16,14 +16,14 @@
     src: url(../css/font/Poppins-ExtraLight.ttf);
 }
 .common_dash_board{
-    width: 76vw;
+    width: 79vw;
     height: 53vw;
     padding-right: 1vw;
 }
 
 .section_dash{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .fa_bar .fa-bars{
@@ -107,11 +107,12 @@ color: white;
 /* menu close  */
 .menu_close{
     width: 6vw;
-    height: 53vw;
+    height: 51vw;
     text-align: center;
     background:#edebeb;
     position: absolute;
     top: 10vw;
+    left: 5vw;
     border-radius: 0vw .5vw 0vw;
     display: none;
 }
@@ -124,6 +125,10 @@ color: white;
     position: absolute;
     top: 0vw;
     right:-1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
 }
 .angle_right:hover{
 color: #e54c9f;
@@ -471,8 +476,9 @@ font-size: 1vw;
 }
 .form_ap form input{ 
     padding:.5vw;
-    border: none;
-    background:#edebeb;
+    border: none !important;
+    width:  10vw;
+    color: red;
 }
 form .fa-search{
     font-size: 1vw;
@@ -480,7 +486,6 @@ form .fa-search{
 .ap_search{
     font-size: 1vw;
     padding: 2vw;
-    
 }
 
 .title_appreciate{
@@ -970,8 +975,7 @@ p{
 .form_app form input{ 
     padding:.5vw;
     border: none;
-    background:#f4f4f4;
-    border: solid .1vw #928b8b;
+    background:#615e5e00;
     width:26vw;
 }
 .form_ap{
@@ -995,10 +999,10 @@ p{
     border: none;
     background:#f4f4f4;
     border: solid .1vw #f4f4f4;
-    width: 22vw;
+    width: 20vw;
 }
 form .fa-search{
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 .ap_search{
     font-size: 1vw;
@@ -1019,6 +1023,7 @@ form .fa-search{
     position: absolute;
     top: 13.5vw;
     right: 0vw;
+    display: none;
 }
 .post_flex{
     display: flex;
@@ -1242,7 +1247,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 2vw 1vw 2vw;
-border-radius: .5vw;
+/* border-radius: .5vw; */
 box-shadow: 0vw 0vw .2vw black;
 
 }
@@ -1280,7 +1285,7 @@ object-position: center;
     padding-left: .5vw;
 }
 .user1_name h3{
-
+ font-size: 1vw;
 }
 .user1_name p{
 
@@ -1291,13 +1296,19 @@ object-position: center;
 .count_mp{
     background: deeppink;
     color: white;
-    width: 1vw;
-    height: 1vw;
+    width: 1.5vw;
+    height: 1.5vw;
     border-radius: 50%;
     margin: 0vw auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vw;
+        
 }
 .message_number h5{
 text-align: center;
+font-size: 1vw;
 }
 .horor{
     
@@ -1358,6 +1369,9 @@ position: relative;
 }
 .username_pm{
     padding-left: .5vw;
+}
+.tuteurh3{
+    font-size: 1vw;
 }
 .pm_delete{
     -webkit-text-stroke:1px grey ;
@@ -1804,6 +1818,10 @@ input::placeholder{
     right: 0vw;
     display: none;
 }
+.deconnecter hr{
+    height: 3px;
+    background: white;
+}
 .tsipika_telo:hover{
     color: deeppink;
 }
@@ -1811,7 +1829,7 @@ input::placeholder{
     font-family: poppins1;
     font-size: 1.2vw;
     color: white;
-    padding: 2vw;
+    padding:  1vw 2vw;
 }
 .menu_element1{
     padding: 0.5vw;

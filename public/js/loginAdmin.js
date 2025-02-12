@@ -26,12 +26,14 @@ email.addEventListener("input",()=>{
 })
 
 motDePasse.addEventListener("input",()=>{
+    console.log("ahoana eeee");
+    
 
     const regex = /^(?=.*?[\d]{2})(?=.*?[#@$&?$*]{1})(?=.*?[a-z])(?=.*?[A-Z]{1}).{8}$/
     if(motDePasse.value){
         let mdp = "08*Marie"
         if(regex.test(motDePasse.value) && motDePasse.value == mdp){
-            labelmotDePasse.textContent = "Votre mot de passe "
+            labelmotDePasse.textContent = "Votre mot de passe"
             labelmotDePasse.style.color = "deeppink"
 
         }else{
@@ -45,18 +47,17 @@ motDePasse.addEventListener("input",()=>{
     }
 })
 
-const p_erreur = document.querySelector(".p_erreur")
-btnAdmin.addEventListener("click",(e)=>{
-    e.preventDefault();
-    let mdp = "08*Marie"
-    let mailaka = "lalaina@gmail.com"
-    if (( motDePasse.value == mdp) && (email.value == mailaka)){ 
-
-        p_erreur.style.display ="block"
-        p_erreur.textContent = "Patientez"
-        p_erreur.style.color ="blue"
-    }else{
-        p_erreur.style.display ="block"
-    }
-    form.reset();
-})
+// const p_erreur = document.querySelector(".p_erreur")
+// btnAdmin.addEventListener("click",(e)=>{
+//     e.preventDefault();
+//     let mdp = "08*Marie"
+//     let mailaka = "lalaina@gmail.com"
+//     if (( motDePasse.value == mdp) && (email.value == mailaka)){ 
+//         console.log("login mandeha");
+        
+//     }else{
+//         p_erreur.style.display ="block"
+//         p_erreur.textContent ="Patientez s'il vous plaît"
+//     }
+//     form.reset();
+// })

@@ -15,6 +15,7 @@ const deconnecter = document.querySelector(".deconnecter")
 
 tsipika_telo.addEventListener("click",()=>{  
     deconnecter.style.display = "block"
+
 })
 
 // edit profil

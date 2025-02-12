@@ -698,7 +698,7 @@ right: -9vw;
 }
 
 .box1_slider{
-    width: 30vw;
+    width: 38vw;
     position: relative;
 }
 .box1_slider h3{
@@ -762,11 +762,12 @@ color: deeppink;
  
 }
 .box2_slider{
-    width: 85vw;
+    width: 82vw;
     margin: 0vw auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 2vw;
 }
 .picture6 h6{
     font-size: 1vw;
@@ -777,7 +778,7 @@ color: deeppink;
 }
 .picture6{
     position: relative;
-    width: 18vw;
+    width: 20vw;
     height: 17vw;
 }
 .picture6 img{
@@ -932,7 +933,7 @@ hr{
     position: absolute;
     z-index: 100;
     top: 5vw;
-    right: 42vw;
+    right: 29vw;
     display: none;
 }
 .connexion_times{
@@ -1061,15 +1062,15 @@ hr{
 
 .section_sign{
     background: linear-gradient(to right, deeppink, deeppink, pink);
-    width: 55vw;
+    width: 48vw;
     margin: 0vw auto;
      box-shadow: 0vw 0vw 48vw black;
     border-radius: .5vw;
     padding: 3vw;
     position: absolute;
     z-index: 100;
-    top: 4vw;
-    right: 12vw;
+    top: 5vw;
+    right: 24vw;
     display: none;
 }
 .sign_times{
@@ -1203,8 +1204,8 @@ hr{
     border: solid .2vw #80808000;
     box-shadow: 0vw 0vw .6vw black;
     position: absolute;
-    left: -1vw;
-    bottom: -4vw;
+    left: -3vw;
+    bottom: -1vw;
 }
 .rond4{
     margin: 0vw auto;
@@ -1215,8 +1216,8 @@ hr{
     border: solid .2vw #80808000;
     box-shadow: 0vw 0vw .5vw black;
     position: absolute;
-    left: 0vw;
-    bottom: 8vw;
+    left: -3vw;
+    bottom: 9vw;
 }
 .rond5{
     margin: 0vw auto;
@@ -1227,8 +1228,8 @@ hr{
     border: solid .2vw #80808000;
     box-shadow: 0vw 0vw .5vw black;
     position: absolute;
-    right:-2vw;
-    top: 18vw;
+    right:-4vw;
+    top: 20vw;
 }
 
 

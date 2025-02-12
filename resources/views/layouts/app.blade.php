@@ -20,8 +20,8 @@
         .a-no-decoration {
             text-decoration: none;
             color: black;
+            /* color: deeppink; */
         }
-
     </style>
     <section>
         <header>
@@ -62,10 +62,12 @@
                             <h5>{{ auth()->user()->name }} {{ auth()->user()->lastname }}</h5>
                         </div>
                         @else
-                        <a href="{{ route('login') }}" style="text-decoration: none; color: black;">
-                            <h3 style="font-family: poppins1;">
-                                Se Connecter
-                            </h3>
+                        <a href="{{ route('login') }}" style="text-decoration: none;">
+                            <div id="box_connect">
+                                <h3 class="toConnect" style="color:deeppink" font-size :1vw;>
+                                    Se Connecter
+                                </h3>
+                            </div>
                         </a>
                         @endif
                     </div>
@@ -276,7 +278,7 @@
                     
                     <a href="{{ route('gestion') }}" class="a-no-decoration">
                     <div class="line1">
-                        <i class="fa fa-paste "></i>
+                        <i class="fa fa-paste"></i>
                         <span class="span_menu_dash">Gestion des résérvations</span>
                     </div>
                     </a>
@@ -318,7 +320,7 @@
 
     <!-- creation de post -->
 
-    <section class="section_post" style="display: none;">
+    <section class="section_post">
         <div class="sect_post">
             <div class="post_header">
                 <h4>Espace pour créer un post</h4>

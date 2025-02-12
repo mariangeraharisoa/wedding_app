@@ -782,6 +782,9 @@ color: deeppink;
     margin: 0vw auto;
     padding-top: 5vw;
 }
+.slider_slick{
+    
+}
 .slide1{
     width: 100vw;
     /* margin: 0vw auto; */
@@ -803,7 +806,7 @@ color: deeppink;
 }
 .picture6{
     position: relative;
-    width: 40vw;
+    width: 45vw;
     height: 17vw;
 }
 .picture6 img{

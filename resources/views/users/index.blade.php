@@ -1,9 +1,53 @@
 @extends('layouts.app')
 
 @section('title', 'Liste des utilisateurs')
+<style>
+    .btn{
+        background: deeppink;
+        border:none;
+        font-family: poppins1;
+    }
+    .btn:hover{
+        background: white;
+        border: solid 1px deeppink;
+        color: deeppink;
+    }
+    .table{
+        font-family: poppins1;
+    }
+    .toConnect{
+        font-family: poppins1;
+        color: white;
+        font-size: 1.2vw;
+        text-align: center;
+    }
+    #box_connect{
+        background:white;
+        border: solid .1vw deeppink;
+        padding: 0.3vw;
+        border-radius: .5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+            
+    }
+    #box_connect:hover, .toConnect:hover{
+        color: white;
+        background:deeppink;
+    }
+    .user_list{
+        color: deeppink;
+        font-family: poppins;
+    }
+    td{
+    color : deeppink;
+    }
+</style>
 
 @section('content')
-<h3>Liste des utilisateurs</h3>
+
+<h3 class="user_list">Liste des utilisateurs</h3>
 <a href="{{ route('users.add') }}">
     <button class="btn btn-primary mt-3">
         <i class="bi bi-plus"></i>

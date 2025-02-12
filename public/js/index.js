@@ -6,7 +6,7 @@ $('.essential_step1').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
-    infinite: false,
+    infinite: true,
     dots:true,
     responsive: [
           {
@@ -29,7 +29,7 @@ $('.box2_slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
-    infinite: false,
+    infinite: true,
     dots:true,
     responsive: [
           {
@@ -53,7 +53,7 @@ $('.organisateurs').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
-  infinite: false,
+  infinite: true,
   dots:true,
   responsive: [
         {
@@ -77,7 +77,7 @@ $('.section4_testimonials').slick({
   slidesToShow: 1,
   slidesToScroll:1,
   arrows: true,
-  infinite: false,
+  infinite: true,
   dots:true,
   responsive: [
         {

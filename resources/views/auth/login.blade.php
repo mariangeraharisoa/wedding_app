@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin login </title>
     <link rel="stylesheet" href="{{ asset('css/loginAdmin.css') }}">
+    <link rel="stylesheet" href="{{ asset('AOS/aos.css') }}">
     <link rel="stylesheet" href="{{ asset('css/fontawesome/css/all.min.css') }}">
 </head>
 <body>
     <section>
+        
         <div class="boxAdmin">
             <div class="titreSeConnecter">
                 <h2> <i class="fa fa-infinity"></i> Se connecter <i class="fa fa-infinity"></i></h2>
@@ -42,7 +44,11 @@
         <i class="fa fa-spinner"></i>
     </section>
 
-    <!-- <script src="{{ asset('js/loginAdmin.js') }}"></script> -->
+    <script src="{{ asset('js/loginAdmin.js') }}"></script> 
+     <script src="AOS/aos.js"></script>
+     <script>
+         AOS.init();
+    </script>
 
 </body>
 </html>

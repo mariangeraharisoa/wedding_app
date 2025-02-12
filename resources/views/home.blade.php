@@ -9,6 +9,7 @@
             <div class="font_user">
                 <i class="fa fa-donate"></i>
             </div>
+        
             <div class="about_price">
                 <span class="span_about_price">Total revenue</span>
                 <div class="k">

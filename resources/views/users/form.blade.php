@@ -10,7 +10,8 @@
     </div>
     <div class="mb-3">
         <label for="lastname" class="form-label">Prénom</label>
-        <input type="text" class="form-control" id="lastname" name="lastname" value="{{ old('lastname', $user->lastname ?? '') }}">
+        <input type="text" class="form-control" id="lastname" name="SRTYIZAQqaze 
+        XSWD3" value="{{ old('lastname', $user->lastname ?? '') }}">
     </div>
     <div class="mb-3">
         <label for="email" class="form-label">Email</label>
@@ -18,7 +19,8 @@
     </div>
     <div class="mb-3">
         <label for="contact" class="form-label">Contact</label>
-        <input type="text" class="form-control" id="contact" name="contact" value="{{ old('contact', $user->contact ?? '') }}">
+        <input type="text" class="form-control" id="contact" name="contact" value="{{ old('contact', $user->contact ?? '') }}"> 
+
     </div>
     <div class="mb-3">
         <label for="address" class="form-label">Adresse</label>
