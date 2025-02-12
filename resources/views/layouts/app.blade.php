@@ -823,6 +823,7 @@
         <div class="menu_element">
             <form id="logout-form" action="{{ route('logout') }}" method="POST">
                 @csrf
+                <input type="hidden" name="admin" value="1">
             </form>
             <div class="menu_element1 menu-logout" style="cursor:pointer;">
                 <i class="fa fa-sign-out-alt"></i>

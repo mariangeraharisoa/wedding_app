@@ -24,11 +24,11 @@
                     <label class="labelmotDePasse">Votre mot de passe</label>
                     <input type="password" name="password" id="motDePasse" required>
                 </div>
-                <!-- @if($errors->any()) -->
+                @if($errors->any())
                 <div class="erreur">
                     <p class="p_erreur">Veuillez vérifier votre email ou votre mot de passe!</p>
                 </div>
-                <!-- @endif -->
+                @endif
                 <div class="adminBtn">
                     <button class="btnAdmin" style="cursor:pointer">Se connecter</button>
                 </div>

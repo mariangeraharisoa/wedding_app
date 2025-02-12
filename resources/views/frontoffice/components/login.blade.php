@@ -10,6 +10,7 @@
                 <span class="span_h2_login">Joindre la communauté</span><br><br>
             
             <form class="form_login" action="{{ route('login') }}" method="POST">@csrf
+                <input type="hidden" name="front" value="10">
                 <div class="lab1">
                     <label id="labelmail">Email</label><br>
                     <input type="text" name="email" class="input_login" id ="Email" required><br><br>
@@ -17,14 +18,12 @@
                 <div class="lab1">
                     <label class="labelMdp">Mot de passe</label><br>
                     <input type="password" name="password" class="input_login" id="password" required><br><br>
-
                 </div>
                 <div class="checkbox_souvenir">
                     <input type="checkbox">
                         <span class="se_souvenir">Se souvenir de moi</span>
                 </div>
-                <br>
-                
+                <br>                
                     <button  class="btn_login">Se connecter</button><br><br>
                     <div class="mdp_forgot">
                         <span class="span_mdp">Mot de passe oublié?</span>

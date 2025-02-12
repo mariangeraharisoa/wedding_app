@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil non inscrit</title>
+    <title>Accueil</title>
     @if(Auth::check())
     <link rel="stylesheet" href="{{ asset('css/inscrit.css') }}">
     @else
@@ -49,6 +49,10 @@
             </div>
 
             @if (Auth::check())
+            <form action="{{ route('logout') }}" method="POST">
+                            @csrf
+                            <button class="connecter" style="cursor: pointer">Se déconnecter</button>
+                        </form>
             <div class="home_connected">
                 <div class="bell">
                     <div class="bell1">
@@ -66,11 +70,6 @@
             </div>
             @else
             <div data-aos="fade-left">
-                <!-- <form action="{{ route('logout') }}" method="POST">
-                            @csrf
-                            <button class="connecter" style="cursor: pointer">Se déconnecter</button>
-                        </form> -->
-                <form>
                     <button class="connecter" style="cursor: pointer">Se connecter</button>
                     <button class="inscrire" style="cursor: pointer">S'inscrire</button>
                 </form>
@@ -556,6 +555,7 @@
         </div>
     </section>
 
+    @if(!Auth::check())
     <!-- SE CONNECTER -->
     @include('frontoffice.components.login')
     <!-- FIN SE CONNECTER -->
@@ -631,6 +631,7 @@
         <div class="rond5"></div>
     </section>
     <!-- FIN S'INSCRIRE -->
+    @endif
 
     <div data-aos="fade-up">
         <footer>
@@ -704,7 +705,6 @@
     <script src="{{ asset('AOS/aos.js') }}"></script>
     <script>
         AOS.init();
-
     </script>
 </body>
 
