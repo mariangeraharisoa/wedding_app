@@ -1076,4 +1076,7 @@ hr{
     right: 0vw;
 }
 
+.voir_plus, .see_more {
+    cursor: pointer;
+}
 

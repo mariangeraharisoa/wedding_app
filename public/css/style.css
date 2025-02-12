@@ -1232,6 +1232,9 @@ hr{
     top: 20vw;
 }
 
+.voir_plus, .see_more {
+    cursor: pointer;
+}
 
 
 

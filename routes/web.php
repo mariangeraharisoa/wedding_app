@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\frontoffice\HomeFrontController;
+use App\Http\Controllers\frontoffice\PackageController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserController;
@@ -40,3 +41,7 @@ Route::get('/planning', [PlanController::class, 'reservation']);
 Route::get('/dash',[DashController::class,'dash'])->name('gestion'); 
 
 Route::get('/fo/home', [HomeFrontController::class, 'index'])->name('fo.home');
+
+Route::get('/fo/coordination', [PackageController::class, 'coordinationDay'])->name('fo.coordination');
+Route::get('/fo/partial-organization', [PackageController::class, 'partialOrganization'])->name('fo.partial_organization');
+Route::get('/fo/complete-organization', [PackageController::class, 'completeOrganization'])->name('fo.complete_organization');
