@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="{{ asset('css/slick-theme.css') }}">
     <link rel="stylesheet" href="{{ asset('css/fontawesome/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('AOS/aos.css') }}">
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -49,10 +52,6 @@
             </div>
 
             @if (Auth::check())
-            <form action="{{ route('logout') }}" method="POST">
-                            @csrf
-                            <button class="connecter" style="cursor: pointer">Se déconnecter</button>
-                        </form>
             <div class="home_connected">
                 <div class="bell">
                     <div class="bell1">
@@ -64,7 +63,7 @@
                     <img src="{{ asset('images/fille.JPG') }}" alt="">
                     <div class="litle_point_pdf"></div>
                 </div>
-                <div class="tasks">
+                <div class="tasks" style="cursor: pointer">
                     <i class="fa fa-tasks"></i>
                 </div>
             </div>
@@ -112,17 +111,15 @@
                 </div>
             </div>
             <hr>
-            <form action="{{ route('logout') }}" method="POST">
+            <form id="logout-form" action="{{ route('logout') }}" method="POST">
                             @csrf
+            </form>
             <div class="element">
-                <div class="element1">
+                <div class="element1 logout" style="cursor:pointer">
                     <i class="fa fa-sign-out-alt"></i>
-                    <button>
                         <span class="span_edit_pdf">Se déconnecter</span>
-                    </button>
                 </div>
             </div>
-            </form>
         </div>
 
         <div class="section_notif">

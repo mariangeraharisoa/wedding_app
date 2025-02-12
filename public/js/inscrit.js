@@ -5,3 +5,13 @@
     section_notif.style.display = "block"
 
 })
+
+$(document).ready(function(){
+    $(".tasks").click(function(){
+        $(".user_menu").toggle();
+    });
+
+    $(".logout").click(function(){
+        $("#logout-form").submit();
+    });
+});
