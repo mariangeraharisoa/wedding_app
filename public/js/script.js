@@ -1,26 +1,26 @@
 const body = document.querySelector("body")
 const angle_up = document.querySelector(".angle_up")
-body.addEventListener("click",()=>{    
-    setTimeout(()=>{
-        angle_up.style.display = "block"
-        angle_up.style.color = "aqua"
-    },1000)
-    setTimeout(()=>{
-        angle_up.style.display = "none"
-    },5000)
-    setTimeout(()=>{
-        angle_up.style.display = "block"
-    },7000)
-    setTimeout(()=>{
-        angle_up.style.display = "none"
-    },9000)
-    setTimeout(()=>{
-        angle_up.style.display = "block"
-    },10000)
-    setTimeout(()=>{
-        angle_up.style.display = "none"
-    },12000)
-})
+// body.addEventListener("click",()=>{    
+//     setTimeout(()=>{
+//         angle_up.style.display = "block"
+//         angle_up.style.color = "aqua"
+//     },1000)
+//     setTimeout(()=>{
+//         angle_up.style.display = "none"
+//     },5000)
+//     setTimeout(()=>{
+//         angle_up.style.display = "block"
+//     },7000)
+//     setTimeout(()=>{
+//         angle_up.style.display = "none"
+//     },9000)
+//     setTimeout(()=>{
+//         angle_up.style.display = "block"
+//     },10000)
+//     setTimeout(()=>{
+//         angle_up.style.display = "none"
+//     },12000)
+// })
 
 
 // S'INSCRIRE
@@ -168,6 +168,17 @@ password.addEventListener("input",()=>{
        }
     
 })
+
+$(document).ready(function(){
+    $(".please-log").on("click",function(){
+        angle_up.style.display = "block"
+        angle_up.style.color = "aqua"
+
+        setTimeout(()=>{
+            angle_up.style.display = "none"
+        },5000)
+    });
+});
 
 
 

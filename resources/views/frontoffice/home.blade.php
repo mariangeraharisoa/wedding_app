@@ -333,7 +333,7 @@
                             repellat pariatur voluptatem aperiam cum vel non inventore fugit amet molestias. Qui, rem.
                             Architecto sunt necessitatibus eos dolore.</p>
                         <div class="btn_plus">
-                            <button class="voir_plus">voir plus</button>
+                            <button class="voir_plus @if(!auth::check()) please-log @endif">voir plus</button>
                         </div>
                     </div>
                     <div class="box2_mpikarakara">
@@ -370,7 +370,7 @@
                             repellat pariatur voluptatem aperiam cum vel non inventore fugit amet molestias. Qui, rem.
                             Architecto sunt necessitatibus eos dolore.</p>
                         <div class="btn_plus">
-                            <button class="voir_plus">voir plus</button>
+                            <button class="voir_plus @if(!auth::check()) please-log @endif">voir plus</button>
                         </div>
                     </div>
                     <div class="box2_mpikarakara">
@@ -419,14 +419,14 @@
                     <span class="span">01</span>
                     <h4>Journée de coordination</h4>
                     <div class="btn_voir_plus1">
-                        <button class="voir_plus">Voir plus</button>
+                        <button class="voir_plus @if(!auth::check()) please-log @endif">Voir plus</button>
                     </div>
                 </div>
                 <div class="number1">
                     <span class="span">02</span>
                     <h4>Organisation partielle</h4>
                     <div class="btn_voir_plus1">
-                        <button class="voir_plus">Voir plus</button>
+                        <button class="voir_plus @if(!auth::check()) please-log @endif">Voir plus</button>
                     </div>
                 </div>
                 <div class="number2">
@@ -439,7 +439,7 @@
                         <i class="fa fa-check"> Lorem ipsum dolor sit amet </i>
                     </div>
                     <div class="btn_voir_plus1">
-                        <button class="voir_plus">Voir plus</button>
+                        <button class="voir_plus @if(!auth::check()) please-log @endif">Voir plus</button>
                     </div>
                 </div>
             </div>
@@ -525,22 +525,22 @@
                 <div class="box2_slider">
                     <div class="picture6">
                         <img src="{{ asset('images/Arches & Mariage.jpg') }}">
-                        <button class="see_more">Voir plus</button>
+                        <button class="see_more @if(!auth::check()) please-log @endif">Voir plus</button>
                         <h6>Njaka & Rina</h6>
                     </div>
                     <div class="picture6">
                         <img src="{{ asset('images/heart.jpg') }}">
-                        <button class="see_more">Voir plus</button>
+                        <button class="see_more @if(!auth::check()) please-log @endif">Voir plus</button>
                         <h6>Salohy & Tina</h6>
                     </div>
                     <div class="picture6">
                         <img src="{{ asset('images/9c1e5a18-e484-427a-aac7-f61bbbf156f2.jpg') }}">
-                        <button class="see_more">Voir plus</button>
+                        <button class="see_more @if(!auth::check()) please-log @endif">Voir plus</button>
                         <h6>Tsiky & Rado</h6>
                     </div>
                     <div class="picture6">
                         <img src="{{ asset('images/b32d133a-bd51-4c1b-bac0-51412a5e6b45.jpg') }}">
-                        <button class="see_more">Voir plus</button>
+                        <button class="see_more @if(!auth::check()) please-log @endif">Voir plus</button>
                         <h6>Fetra & Sarobidy</h6>
                     </div>
                 </div>
